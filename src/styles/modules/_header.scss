@@ -1,0 +1,121 @@
+.header {
+    display: none;
+  }
+
+  #header__sec-nav {
+    position: fixed;
+    background: #d695a7;
+    width: 100%;
+    height: 100px;
+    z-index: 900;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  #header__sec-nav.m_fixed {
+    left: 0;
+    position: fixed;
+    top: 0;
+  }
+  
+  .header__sec-logo {
+      padding-left: 60px;
+  }
+  
+  #header__sec-nav .inner {
+    padding-bottom: 0;
+    padding-top: 0;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 80px 0;
+    width: 1100px;
+  }
+  
+  .header__sec-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header__sec-item {
+    border-left: 1px solid #fff;
+    width: 18%;
+    text-align: center;
+  }
+  
+  .header__sec-item:first-child {
+      border-left: 0;
+  }
+  
+  .header__sec-item > a {
+      color: #fff;
+      font-weight: bold;
+     
+  }
+  .header__sec-item > a:hover {
+      color: #fff;
+      opacity: 0.8;
+  }
+  
+  .header__sec-item > a > span {
+      color: #C2617C;
+      @extend .fo-ru;
+      @extend .italic;
+      font-weight: 500;
+      font-size: 20px;
+      letter-spacing: 0.08rem;
+  }
+  
+  .logo {
+      padding-left: 60px;
+  }
+  
+  .dial {
+      font-size: 10px;
+      background-color: #C2617C;
+      border-radius: 40px;
+      color: #fff;
+      letter-spacing: 0.06rem;
+      width: 155px;
+      margin: 0 0 0 auto;
+      padding: 2px 0;
+  }
+  
+  .header__sec-tel {
+      font-size: 24px;
+      @extend .fo-ru;
+      color: #C2617C;
+      &__blk {
+          display: table;
+          width: 300px;
+          height: 100%;
+          background-color: #fff;
+          text-align: center;
+          border-bottom-left-radius: 35px;
+          border-top-left-radius: 35px;
+          // padding: 0 30px;
+      }
+  }
+  .header__sec-num {
+      display: table-cell;
+      vertical-align: middle;
+  
+      & > img {
+          position: relative;
+          bottom: 3px;
+      }
+  
+      &__tel {
+          text-align: right;
+      }
+  }
+  .header__sec-time {
+      color: #C2617C;
+      position: relative;
+      left: 13px;
+  }
+  
+  

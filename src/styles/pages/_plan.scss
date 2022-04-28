@@ -1,0 +1,122 @@
+.plan {
+    &__inner {
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    &__ttl {
+        &-circle {
+            width: 100%;
+            background-color: $pink-sec;
+            color: #fff;
+            text-align: center;
+            border-radius: 30px;
+            padding: 11px 0;
+
+            & > h1 {
+                font-size: 20px;
+                margin:0;
+            }
+        }
+        &-circle02 {
+            width: 100%;
+            background-color: #5F8E97;
+            color: #fff;
+            text-align: center;
+            border-radius: 30px;
+            padding: 11px 0;
+
+            & > h1 {
+                font-size: 20px;
+                margin:0;
+            }
+        }
+
+        &-under {
+            & > p {
+                font-size: 14px;
+                line-height: 2;
+                letter-spacing: 0.03rem;
+                text-align: center;
+                margin-top: 40px;
+            }
+        }
+    }
+
+    &__card {
+        margin-right: 10px;
+        &-wrap {
+            &-top {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 60px;
+            }
+            &-center {
+                display: flex;
+                flex-direction: row;
+              
+            }
+        }
+
+        & > img {
+            width: 100%;
+        }
+
+        &-radius {
+            & > img {
+                border-radius: 10px;
+                border: 2px solid #fff 0,6;
+
+            }
+        }
+    }
+}
+
+.tokuten {
+    background-image: url(../images/machine/back.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 200px;
+
+    &__inner {
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    &__panel {
+        width: 40%;
+    }
+
+    &__txt {
+        & > p {
+            font-size: 14px;
+            line-height: 2;
+            letter-spacing: 0.03rem;
+            width: 85%;
+            margin: 0 auto;
+        }
+    }
+    &__span {
+        color: $pink-sec;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &__images {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+.mb-lr {
+    margin-top: 90px;
+}
+.mb-big {
+    margin-top: 150px;
+}

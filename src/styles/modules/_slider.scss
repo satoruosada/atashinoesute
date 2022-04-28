@@ -1,0 +1,77 @@
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {
+  /*横幅94%で左右に余白を持たせて中央寄せ*/
+  width: 94%;
+  margin: 40px auto 60px;
+  padding: 0;
+}
+
+.slider img {
+  width: 100%; /*スライダー内の画像を60vwにしてレスポンシブ化*/
+  height: auto;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.slider .slick-slide.slick-center {
+  transform: none !important;
+}
+.slider .slick-slide {
+  transform: none !important; /*左右の画像のサイズを80%に*/
+  transition: all 0.5s; /*拡大や透過のアニメーションを0.5秒で行う*/
+  opacity: 1; /*透過50%*/
+  margin: 0 30px;
+}
+
+.slick-dots .slick-active button {
+  display: none;
+}
+
+.slick-prev .slick-arrow {
+  display: none;
+}
+
+
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width: 10px; /*ドットボタンのサイズ*/
+  height: 10px; /*ドットボタンのサイズ*/
+  display: block;
+  border-radius: 50%;
+  background: #ccc; /*ドットボタンの色*/
+  border: #9bb2cc;
+}
+
+.slick-dots .slick-active button {
+  background-image: url(../images/top/foot-slide@2x.png); /*ドットボタンの現在地表示の色*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  padding: 0;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  bottom: 5px;
+
+  &::after {
+      content: "";
+      display: block;
+      padding-top: 20%;
+  }
+}

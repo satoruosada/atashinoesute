@@ -1,0 +1,35 @@
+@charset "UTF-8";.btn {
+  background-color: #c2617c;
+  color: #fff;
+  font-size: 18px;
+  height: 70px;
+  line-height: 70px;
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 70px;
+  position: relative; }
+  .btn:hover {
+    color: #fff; }
+  .btn::after {
+    content: "";
+    display: block;
+    background-image: url(../images/icon/icon_yajirushi.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .btn-full {
+    background-color: #c2617c;
+    width: 100% !important;
+    height: 80px;
+    line-height: 0.5; }
+
+/*# sourceMappingURL=button.css.map */

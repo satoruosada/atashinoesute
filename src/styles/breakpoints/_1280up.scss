@@ -1,43 +1,85 @@
-@media screen and (max-width:1280px) {
+@media screen and (max-width: 1280px) {
 
-    .header {
-        background: #ffffff;
+  .global-logo {
+    padding-left: 10px;
+  }
+ 
+  .global-item > a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 11px;
+  }
 
+
+  .global-item > a > span {
+    font-size: 18px;
+  }
+  .tel {
+    font-size: 18px;
+    &__blk {
+      width: 330px;
     }
-    .category {
-        &__ttl {
-            font-size: 20px;
-        }
-        &__txt {
-            top: 45%;
-        }
-    }
+  }
+  .time {
+    font-size: 12px;
+  }
 
-    .info {
-        &__panel {
-            margin-left: 50px;
-        }
-        &__inner {
-            width: 80%;
-        }
-    }
 
-    .main {
-        &__inner {
-            width: 90%;
-        }
 
-        &__panel {
-            width: 100%;
-        }
+  .machine {
+    &__bg {
+      & > img {
+        width: 100%;
+        height: 100%;
+      }
     }
+  }
 
-    .top {
-        &__news {
-            &::after {
-                padding-top: 30%;
-            }
-        }
-    }
+  
+
 }
 
+@media screen and (max-width: 1400px) {
+  .hero {
+    &__images {
+      background-position: -580px;
+      &::after {
+        content: "";
+        display: block;
+        padding-top: 60%;
+      }
+    }
+
+    &__img01 {
+      position: absolute;
+      top: 30%;
+      left: 20%;
+
+      & > img {
+        width: 65%;
+      }
+    }
+
+    &__star04 {
+      right: 20%;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .hero {
+    &__img01 {
+      top: 25%;
+
+      & > img {
+        width: 65%;
+      }
+    }
+  }
+
+  .tel{
+    &__blk {
+      width: 350px;
+    }
+  }
+}

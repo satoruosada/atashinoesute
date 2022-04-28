@@ -1,0 +1,40 @@
+// 共通パーツ
+$pink: #d695a7;
+$pink-sec: #c2617c;
+.btn {
+  background-color: $pink-sec;
+  color: #fff;
+  font-size: 18px;
+  height: 70px;
+  line-height: 70px;
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 70px;
+  position: relative;
+  &:hover {
+    color: #fff;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    background-image: url(../images/icon/icon_yajirushi.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-full {
+    background-color: #c2617c;
+    width: 100% !important;
+    height: 80px;
+    line-height: 0.5;
+  }
+}
